@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "common_name": "Tomat",
+    "scientific_name": "Solanum lycopersicum",
+    "yield_kg_per_m2": 5,
+    "seed_rate": 0.003,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 3
+  },
+  {
+    "id": 2,
+    "common_name": "Agurk",
+    "scientific_name": "Cucumis sativus",
+    "yield_kg_per_m2": 8,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 3
+  },
+  {
+    "id": 3,
+    "common_name": "Gulrot",
+    "scientific_name": "Daucus carota",
+    "yield_kg_per_m2": 4,
+    "seed_rate": 0.005,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 4,
+    "common_name": "Salat",
+    "scientific_name": "Lactuca sativa",
+    "yield_kg_per_m2": 3,
+    "seed_rate": 0.001,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 5,
+    "common_name": "Potet",
+    "scientific_name": "Solanum tuberosum",
+    "yield_kg_per_m2": 3,
+    "seed_rate": 2,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 2
+  },
+  {
+    "id": 6,
+    "common_name": "Løk",
+    "scientific_name": "Allium cepa",
+    "yield_kg_per_m2": 4,
+    "seed_rate": 0.004,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 7,
+    "common_name": "Paprika",
+    "scientific_name": "Capsicum annuum",
+    "yield_kg_per_m2": 4,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 3
+  },
+  {
+    "id": 8,
+    "common_name": "Squash",
+    "scientific_name": "Cucurbita pepo",
+    "yield_kg_per_m2": 6,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 3
+  },
+  {
+    "id": 9,
+    "common_name": "Brokkoli",
+    "scientific_name": "Brassica oleracea var. italica",
+    "yield_kg_per_m2": 2.5,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 10,
+    "common_name": "Kål",
+    "scientific_name": "Brassica oleracea var. capitata",
+    "yield_kg_per_m2": 5,
+    "seed_rate": 0.003,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 1
+  },
+  {
+    "id": 11,
+    "common_name": "Spinat",
+    "scientific_name": "Spinacia oleracea",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 12,
+    "common_name": "Erter",
+    "scientific_name": "Pisum sativum",
+    "yield_kg_per_m2": 1.5,
+    "seed_rate": 0.15,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 13,
+    "common_name": "Bønner",
+    "scientific_name": "Phaseolus vulgaris",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.1,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 3
+  },
+  {
+    "id": 14,
+    "common_name": "Mais",
+    "scientific_name": "Zea mays",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.02,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 3
+  },
+  {
+    "id": 15,
+    "common_name": "Gresskar",
+    "scientific_name": "Cucurbita maxima",
+    "yield_kg_per_m2": 8,
+    "seed_rate": 0.015,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 3
+  },
+  {
+    "id": 16,
+    "common_name": "Reddik",
+    "scientific_name": "Raphanus sativus",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 17,
+    "common_name": "Selleri",
+    "scientific_name": "Apium graveolens",
+    "yield_kg_per_m2": 3,
+    "seed_rate": 0.001,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 18,
+    "common_name": "Purre",
+    "scientific_name": "Allium porrum",
+    "yield_kg_per_m2": 3,
+    "seed_rate": 0.003,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 19,
+    "common_name": "Bete",
+    "scientific_name": "Beta vulgaris",
+    "yield_kg_per_m2": 4,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 20,
+    "common_name": "Pastinakk",
+    "scientific_name": "Pastinaca sativa",
+    "yield_kg_per_m2": 3,
+    "seed_rate": 0.005,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 21,
+    "common_name": "Chili",
+    "scientific_name": "Capsicum annuum",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.001,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 4
+  },
+  {
+    "id": 22,
+    "common_name": "Aubergine",
+    "scientific_name": "Solanum melongena",
+    "yield_kg_per_m2": 4,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 4
+  },
+  {
+    "id": 23,
+    "common_name": "Rosenkål",
+    "scientific_name": "Brassica oleracea var. gemmifera",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 24,
+    "common_name": "Blomkål",
+    "scientific_name": "Brassica oleracea var. botrytis",
+    "yield_kg_per_m2": 3,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 25,
+    "common_name": "Grønnkål",
+    "scientific_name": "Brassica oleracea var. sabellica",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.003,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 1
+  },
+  {
+    "id": 26,
+    "common_name": "Squashblomster",
+    "scientific_name": "Cucurbita pepo",
+    "yield_kg_per_m2": 1,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 3
+  },
+  {
+    "id": 27,
+    "common_name": "Sopp",
+    "scientific_name": "Agaricus bisporus",
+    "yield_kg_per_m2": 10,
+    "seed_rate": 0.5,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 1
+  },
+  {
+    "id": 28,
+    "common_name": "Hvitløk",
+    "scientific_name": "Allium sativum",
+    "yield_kg_per_m2": 1.5,
+    "seed_rate": 0.5,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 29,
+    "common_name": "Søtpotet",
+    "scientific_name": "Ipomoea batatas",
+    "yield_kg_per_m2": 4,
+    "seed_rate": 1,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 4
+  },
+  {
+    "id": 30,
+    "common_name": "Artisjokkk",
+    "scientific_name": "Cynara cardunculus var. scolymus",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.005,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 3
+  },
+  {
+    "id": 31,
+    "common_name": "Asparges",
+    "scientific_name": "Asparagus officinalis",
+    "yield_kg_per_m2": 1,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 32,
+    "common_name": "Kinakål",
+    "scientific_name": "Brassica rapa subsp. pekinensis",
+    "yield_kg_per_m2": 4,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 33,
+    "common_name": "Pak_choi",
+    "scientific_name": "Brassica rapa subsp. chinensis",
+    "yield_kg_per_m2": 3,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 34,
+    "common_name": "Ruccola",
+    "scientific_name": "Eruca vesicaria",
+    "yield_kg_per_m2": 1.5,
+    "seed_rate": 0.005,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 35,
+    "common_name": "Mangold",
+    "scientific_name": "Beta vulgaris subsp. cicla",
+    "yield_kg_per_m2": 3,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 36,
+    "common_name": "Endive",
+    "scientific_name": "Cichorium endivia",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 37,
+    "common_name": "Fennikel",
+    "scientific_name": "Foeniculum vulgare",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.005,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 3
+  },
+  {
+    "id": 38,
+    "common_name": "Persille",
+    "scientific_name": "Petroselinum crispum",
+    "yield_kg_per_m2": 1,
+    "seed_rate": 0.003,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 39,
+    "common_name": "Basilikum",
+    "scientific_name": "Ocimum basilicum",
+    "yield_kg_per_m2": 1,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 3
+  },
+  {
+    "id": 40,
+    "common_name": "Dill",
+    "scientific_name": "Anethum graveolens",
+    "yield_kg_per_m2": 0.5,
+    "seed_rate": 0.005,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 41,
+    "common_name": "Koriander",
+    "scientific_name": "Coriandrum sativum",
+    "yield_kg_per_m2": 0.8,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 42,
+    "common_name": "Timian",
+    "scientific_name": "Thymus vulgaris",
+    "yield_kg_per_m2": 0.5,
+    "seed_rate": 0.001,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 43,
+    "common_name": "Oregano",
+    "scientific_name": "Origanum vulgare",
+    "yield_kg_per_m2": 0.5,
+    "seed_rate": 0.001,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 2
+  },
+  {
+    "id": 44,
+    "common_name": "Mynte",
+    "scientific_name": "Mentha",
+    "yield_kg_per_m2": 1,
+    "seed_rate": 0.001,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 45,
+    "common_name": "Salvie",
+    "scientific_name": "Salvia officinalis",
+    "yield_kg_per_m2": 0.5,
+    "seed_rate": 0.002,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  },
+  {
+    "id": 46,
+    "common_name": "Rosmarin",
+    "scientific_name": "Salvia rosmarinus",
+    "yield_kg_per_m2": 0.5,
+    "seed_rate": 0.001,
+    "seed_unit": "kg",
+    "frost_tolerance": "light",
+    "min_zone": 3
+  },
+  {
+    "id": 47,
+    "common_name": "Melon",
+    "scientific_name": "Cucumis melo",
+    "yield_kg_per_m2": 5,
+    "seed_rate": 0.005,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 4
+  },
+  {
+    "id": 48,
+    "common_name": "Vannmelon",
+    "scientific_name": "Citrullus lanatus",
+    "yield_kg_per_m2": 6,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "none",
+    "min_zone": 4
+  },
+  {
+    "id": 49,
+    "common_name": "Rabarbra",
+    "scientific_name": "Rheum rhabarbarum",
+    "yield_kg_per_m2": 3,
+    "seed_rate": 0.01,
+    "seed_unit": "kg",
+    "frost_tolerance": "moderate",
+    "min_zone": 1
+  },
+  {
+    "id": 50,
+    "common_name": "Jordbær",
+    "scientific_name": "Fragaria × ananassa",
+    "yield_kg_per_m2": 2,
+    "seed_rate": 0.5,
+    "seed_unit": "planter",
+    "frost_tolerance": "moderate",
+    "min_zone": 2
+  }
+]
