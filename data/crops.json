@@ -1,0 +1,502 @@
+[
+  {
+    "common_name": "Tomat",
+    "scientific_name": "Solanum lycopersicum",
+    "planting_date_offset_after_frost": 14,
+    "yield_per_m2_kg": 12,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 50,
+    "description": "Klassisk drivhustomat, krever varme og god drenering."
+  },
+  {
+    "common_name": "Agurk",
+    "scientific_name": "Cucumis sativus",
+    "planting_date_offset_after_frost": 14,
+    "yield_per_m2_kg": 10,
+    "seed_rate_per_m2": 0.002,
+    "seed_unit": "kg",
+    "spacing_cm": 40,
+    "description": "Varmekjær plante, egnet for drivhus eller utebruk i varme områder."
+  },
+  {
+    "common_name": "Paprika",
+    "scientific_name": "Capsicum annuum",
+    "planting_date_offset_after_frost": 21,
+    "yield_per_m2_kg": 8,
+    "seed_rate_per_m2": 0.002,
+    "seed_unit": "kg",
+    "spacing_cm": 45,
+    "description": "Søt paprika trenger varme og sol."
+  },
+  {
+    "common_name": "Chili",
+    "scientific_name": "Capsicum frutescens",
+    "planting_date_offset_after_frost": 21,
+    "yield_per_m2_kg": 6,
+    "seed_rate_per_m2": 0.002,
+    "seed_unit": "kg",
+    "spacing_cm": 40,
+    "description": "Sterk chili for grytteretter og saus."
+  },
+  {
+    "common_name": "Salat",
+    "scientific_name": "Lactuca sativa",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 3,
+    "seed_rate_per_m2": 0.001,
+    "seed_unit": "kg",
+    "spacing_cm": 25,
+    "description": "Raskvoksende, kan sås tidlig på våren."
+  },
+  {
+    "common_name": "Gulrot",
+    "scientific_name": "Daucus carota",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 5,
+    "seed_rate_per_m2": 0.005,
+    "seed_unit": "kg",
+    "spacing_cm": 5,
+    "description": "Kan sås direkte i jorda tidlig på våren."
+  },
+  {
+    "common_name": "Potet",
+    "scientific_name": "Solanum tuberosum",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 8,
+    "seed_rate_per_m2": 5,
+    "seed_unit": "sett",
+    "spacing_cm": 30,
+    "description": "Krever god jord og regelmessig vanning."
+  },
+  {
+    "common_name": "Løk",
+    "scientific_name": "Allium cepa",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 4,
+    "seed_rate_per_m2": 50,
+    "seed_unit": "sett",
+    "spacing_cm": 10,
+    "description": "Kan plantes fra sett eller frø."
+  },
+  {
+    "common_name": "Kålrot",
+    "scientific_name": "Brassica napus",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 6,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 25,
+    "description": "Hardføre rotgrønnsak for lagringsformål."
+  },
+  {
+    "common_name": "Kål",
+    "scientific_name": "Brassica oleracea",
+    "planting_date_offset_after_frost": 7,
+    "yield_per_m2_kg": 7,
+    "seed_rate_per_m2": 0.004,
+    "seed_unit": "kg",
+    "spacing_cm": 40,
+    "description": "Hodekål som tåler kjølig vær."
+  },
+  {
+    "common_name": "Brokkoli",
+    "scientific_name": "Brassica oleracea var. italica",
+    "planting_date_offset_after_frost": 7,
+    "yield_per_m2_kg": 5,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 45,
+    "description": "Næringsrik kålplante."
+  },
+  {
+    "common_name": "Blomkål",
+    "scientific_name": "Brassica oleracea var. botrytis",
+    "planting_date_offset_after_frost": 7,
+    "yield_per_m2_kg": 6,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 50,
+    "description": "Krever jevn vannforsyning."
+  },
+  {
+    "common_name": "Erter",
+    "scientific_name": "Pisum sativum",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 2,
+    "seed_rate_per_m2": 0.15,
+    "seed_unit": "kg",
+    "spacing_cm": 5,
+    "description": "Tidlig vårgrønnsak, kan sås direkte."
+  },
+  {
+    "common_name": "Bønner",
+    "scientific_name": "Phaseolus vulgaris",
+    "planting_date_offset_after_frost": 14,
+    "yield_per_m2_kg": 4,
+    "seed_rate_per_m2": 0.12,
+    "seed_unit": "kg",
+    "spacing_cm": 15,
+    "description": "Varmekjære, kan være buskvoksende eller klatrende."
+  },
+  {
+    "common_name": "Gresskar",
+    "scientific_name": "Cucurbita maxima",
+    "planting_date_offset_after_frost": 21,
+    "yield_per_m2_kg": 15,
+    "seed_rate_per_m2": 0.01,
+    "seed_unit": "kg",
+    "spacing_cm": 100,
+    "description": "Krever mye plass og næring."
+  },
+  {
+    "common_name": "Squash",
+    "scientific_name": "Cucurbita pepo",
+    "planting_date_offset_after_frost": 14,
+    "yield_per_m2_kg": 8,
+    "seed_rate_per_m2": 0.008,
+    "seed_unit": "kg",
+    "spacing_cm": 60,
+    "description": "Sommer- eller vintersquash."
+  },
+  {
+    "common_name": "Spinat",
+    "scientific_name": "Spinacia oleracea",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 2,
+    "seed_rate_per_m2": 0.01,
+    "seed_unit": "kg",
+    "spacing_cm": 15,
+    "description": "Raskvoksende bladgrønnsak."
+  },
+  {
+    "common_name": "Reddik",
+    "scientific_name": "Raphanus sativus",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 3,
+    "seed_rate_per_m2": 0.008,
+    "seed_unit": "kg",
+    "spacing_cm": 5,
+    "description": "Veldig rask å dyrke, klar på 3-4 uker."
+  },
+  {
+    "common_name": "Purre",
+    "scientific_name": "Allium porrum",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 4,
+    "seed_rate_per_m2": 0.005,
+    "seed_unit": "kg",
+    "spacing_cm": 15,
+    "description": "Hardføre løkplante."
+  },
+  {
+    "common_name": "Selleri",
+    "scientific_name": "Apium graveolens",
+    "planting_date_offset_after_frost": 14,
+    "yield_per_m2_kg": 5,
+    "seed_rate_per_m2": 0.002,
+    "seed_unit": "kg",
+    "spacing_cm": 30,
+    "description": "Krever lang sesong og mye vann."
+  },
+  {
+    "common_name": "Mais",
+    "scientific_name": "Zea mays",
+    "planting_date_offset_after_frost": 21,
+    "yield_per_m2_kg": 3,
+    "seed_rate_per_m2": 0.02,
+    "seed_unit": "kg",
+    "spacing_cm": 30,
+    "description": "Søtmais for ferskt bruk."
+  },
+  {
+    "common_name": "Aubergine",
+    "scientific_name": "Solanum melongena",
+    "planting_date_offset_after_frost": 21,
+    "yield_per_m2_kg": 7,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 50,
+    "description": "Varmekjær frukt, trenger drivhus i Norge."
+  },
+  {
+    "common_name": "Rosenkål",
+    "scientific_name": "Brassica oleracea var. gemmifera",
+    "planting_date_offset_after_frost": 7,
+    "yield_per_m2_kg": 4,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 50,
+    "description": "Vokser små kålhoder langs stammen."
+  },
+  {
+    "common_name": "Grønnkål",
+    "scientific_name": "Brassica oleracea var. sabellica",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 3,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 40,
+    "description": "Sunn bladkål som tåler frost."
+  },
+  {
+    "common_name": "Pak choi",
+    "scientific_name": "Brassica rapa subsp. chinensis",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 4,
+    "seed_rate_per_m2": 0.004,
+    "seed_unit": "kg",
+    "spacing_cm": 25,
+    "description": "Kinesisk kål med mild smak."
+  },
+  {
+    "common_name": "Ruccola",
+    "scientific_name": "Eruca vesicaria",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 2,
+    "seed_rate_per_m2": 0.005,
+    "seed_unit": "kg",
+    "spacing_cm": 15,
+    "description": "Peppery salat, rask vekst."
+  },
+  {
+    "common_name": "Rødbet",
+    "scientific_name": "Beta vulgaris",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 5,
+    "seed_rate_per_m2": 0.008,
+    "seed_unit": "kg",
+    "spacing_cm": 10,
+    "description": "Søt rotgrønnsak."
+  },
+  {
+    "common_name": "Pastinakk",
+    "scientific_name": "Pastinaca sativa",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 4,
+    "seed_rate_per_m2": 0.005,
+    "seed_unit": "kg",
+    "spacing_cm": 15,
+    "description": "Søt rotgrønnsak som blir bedre etter frost."
+  },
+  {
+    "common_name": "Nepegrønnsak",
+    "scientific_name": "Brassica rapa",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 6,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 20,
+    "description": "Hvit rotgrønnsak."
+  },
+  {
+    "common_name": "Vårløk",
+    "scientific_name": "Allium fistulosum",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 3,
+    "seed_rate_per_m2": 0.008,
+    "seed_unit": "kg",
+    "spacing_cm": 5,
+    "description": "Mild løksmak, brukes fersk."
+  },
+  {
+    "common_name": "Persille",
+    "scientific_name": "Petroselinum crispum",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 1,
+    "seed_rate_per_m2": 0.005,
+    "seed_unit": "kg",
+    "spacing_cm": 15,
+    "description": "Populær krydderurt."
+  },
+  {
+    "common_name": "Koriander",
+    "scientific_name": "Coriandrum sativum",
+    "planting_date_offset_after_frost": 7,
+    "yield_per_m2_kg": 1,
+    "seed_rate_per_m2": 0.01,
+    "seed_unit": "kg",
+    "spacing_cm": 15,
+    "description": "Aromatisk urt."
+  },
+  {
+    "common_name": "Basilikum",
+    "scientific_name": "Ocimum basilicum",
+    "planting_date_offset_after_frost": 21,
+    "yield_per_m2_kg": 1,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 20,
+    "description": "Italiensk urt, varmekjær."
+  },
+  {
+    "common_name": "Dill",
+    "scientific_name": "Anethum graveolens",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 1,
+    "seed_rate_per_m2": 0.005,
+    "seed_unit": "kg",
+    "spacing_cm": 20,
+    "description": "Populær til fisk og poteter."
+  },
+  {
+    "common_name": "Timian",
+    "scientific_name": "Thymus vulgaris",
+    "planting_date_offset_after_frost": 7,
+    "yield_per_m2_kg": 0.5,
+    "seed_rate_per_m2": 0.001,
+    "seed_unit": "kg",
+    "spacing_cm": 20,
+    "description": "Flerårig krydderurt."
+  },
+  {
+    "common_name": "Oregano",
+    "scientific_name": "Origanum vulgare",
+    "planting_date_offset_after_frost": 7,
+    "yield_per_m2_kg": 0.5,
+    "seed_rate_per_m2": 0.001,
+    "seed_unit": "kg",
+    "spacing_cm": 25,
+    "description": "Italiensk pizzaurt."
+  },
+  {
+    "common_name": "Salvie",
+    "scientific_name": "Salvia officinalis",
+    "planting_date_offset_after_frost": 7,
+    "yield_per_m2_kg": 0.5,
+    "seed_rate_per_m2": 0.002,
+    "seed_unit": "kg",
+    "spacing_cm": 30,
+    "description": "Kraftig smak, brukes sparsomt."
+  },
+  {
+    "common_name": "Rosmarin",
+    "scientific_name": "Rosmarinus officinalis",
+    "planting_date_offset_after_frost": 14,
+    "yield_per_m2_kg": 0.5,
+    "seed_rate_per_m2": 0.002,
+    "seed_unit": "kg",
+    "spacing_cm": 40,
+    "description": "Middelhavskrydder."
+  },
+  {
+    "common_name": "Myntе",
+    "scientific_name": "Mentha",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 1,
+    "seed_rate_per_m2": 0.001,
+    "seed_unit": "kg",
+    "spacing_cm": 30,
+    "description": "Kan spre seg kraftig."
+  },
+  {
+    "common_name": "Melon",
+    "scientific_name": "Cucumis melo",
+    "planting_date_offset_after_frost": 21,
+    "yield_per_m2_kg": 10,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 60,
+    "description": "Søt frukt, krever varme."
+  },
+  {
+    "common_name": "Vannmelon",
+    "scientific_name": "Citrullus lanatus",
+    "planting_date_offset_after_frost": 21,
+    "yield_per_m2_kg": 12,
+    "seed_rate_per_m2": 0.005,
+    "seed_unit": "kg",
+    "spacing_cm": 100,
+    "description": "Stor frukt som krever mye plass og varme."
+  },
+  {
+    "common_name": "Asparges",
+    "scientific_name": "Asparagus officinalis",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 2,
+    "seed_rate_per_m2": 3,
+    "seed_unit": "sett",
+    "spacing_cm": 40,
+    "description": "Flerårig plante, tar tid å etablere."
+  },
+  {
+    "common_name": "Kinakål",
+    "scientific_name": "Brassica rapa subsp. pekinensis",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 5,
+    "seed_rate_per_m2": 0.003,
+    "seed_unit": "kg",
+    "spacing_cm": 30,
+    "description": "Mild kålvariant."
+  },
+  {
+    "common_name": "Fennikel",
+    "scientific_name": "Foeniculum vulgare",
+    "planting_date_offset_after_frost": 7,
+    "yield_per_m2_kg": 3,
+    "seed_rate_per_m2": 0.005,
+    "seed_unit": "kg",
+    "spacing_cm": 30,
+    "description": "Anisesmak, brukes rå eller kokt."
+  },
+  {
+    "common_name": "Hvitløk",
+    "scientific_name": "Allium sativum",
+    "planting_date_offset_after_frost": -60,
+    "yield_per_m2_kg": 2,
+    "seed_rate_per_m2": 40,
+    "seed_unit": "sett",
+    "spacing_cm": 10,
+    "description": "Plantes høst eller tidlig vår."
+  },
+  {
+    "common_name": "Sjalottløk",
+    "scientific_name": "Allium cepa var. aggregatum",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 3,
+    "seed_rate_per_m2": 30,
+    "seed_unit": "sett",
+    "spacing_cm": 15,
+    "description": "Mild løksmak."
+  },
+  {
+    "common_name": "Rabarbra",
+    "scientific_name": "Rheum rhabarbarum",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 5,
+    "seed_rate_per_m2": 1,
+    "seed_unit": "sett",
+    "spacing_cm": 100,
+    "description": "Flerårig plante, surt stammer brukes til dessert."
+  },
+  {
+    "common_name": "Jordbær",
+    "scientific_name": "Fragaria × ananassa",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 3,
+    "seed_rate_per_m2": 4,
+    "seed_unit": "sett",
+    "spacing_cm": 30,
+    "description": "Populære bær, kan gi avling i flere år."
+  },
+  {
+    "common_name": "Bringebær",
+    "scientific_name": "Rubus idaeus",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 2,
+    "seed_rate_per_m2": 1,
+    "seed_unit": "sett",
+    "spacing_cm": 50,
+    "description": "Flerårige busker."
+  },
+  {
+    "common_name": "Solbær",
+    "scientific_name": "Ribes nigrum",
+    "planting_date_offset_after_frost": 0,
+    "yield_per_m2_kg": 4,
+    "seed_rate_per_m2": 1,
+    "seed_unit": "sett",
+    "spacing_cm": 150,
+    "description": "Hardføre busker, rik på C-vitamin."
+  }
+]
