@@ -865,7 +865,8 @@ function showDiarySummary() {
         .sort((a, b) => b[1] - a[1])
         .slice(0, 5);
     
-    const mostActiveMonth = monthCounts.indexOf(Math.max(...monthCounts));
+    const maxMonthCount = Math.max(...monthCounts);
+    const mostActiveMonth = maxMonthCount > 0 ? monthCounts.indexOf(maxMonthCount) : 0;
     const monthNames = ['Januar', 'Februar', 'Mars', 'April', 'Mai', 'Juni', 
                        'Juli', 'August', 'September', 'Oktober', 'November', 'Desember'];
     
