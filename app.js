@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeEventListeners();
     renderPlants();
     renderHandleliste();
+    initializeScrollBehavior();
+    initializeSearchAndFilter();
 });
 
 // Load crops and climate zones data
@@ -25,6 +27,7 @@ async function loadData() {
         climateZonesData = await climateResponse.json();
         
         populatePlantSelect();
+        updateHeaderStats();
     } catch (error) {
         console.error('Error loading data:', error);
         alert('Kunne ikke laste plantdata. Vennligst sjekk at datafilene finnes.');
@@ -378,6 +381,7 @@ function renderHandleliste() {
     if (handleliste.length === 0) {
         table.style.display = 'none';
         emptyMessage.style.display = 'block';
+        updateHeaderStats();
         return;
     }
     
@@ -405,6 +409,8 @@ function renderHandleliste() {
         `;
         tbody.appendChild(row);
     });
+    
+    updateHeaderStats();
 }
 
 // Export to CSV
@@ -520,5 +526,117 @@ async function exportToPDF() {
         alert('Kunne ikke generere PDF. Sjekk konsollen for detaljer.');
     } finally {
         document.body.removeChild(pdfContainer);
+    }
+}
+
+// Update header statistics
+function updateHeaderStats() {
+    const totalPlantsElement = document.getElementById('total-plants');
+    const listItemsElement = document.getElementById('list-items');
+    
+    if (totalPlantsElement) {
+        totalPlantsElement.textContent = cropsData.length;
+    }
+    
+    if (listItemsElement) {
+        listItemsElement.textContent = handleliste.length;
+    }
+}
+
+// Initialize scroll behavior
+function initializeScrollBehavior() {
+    const scrollTopBtn = document.getElementById('scroll-top-btn');
+    
+    if (!scrollTopBtn) return;
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    });
+    
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    // Smooth scroll for navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const offset = 20;
+                const targetPosition = targetSection.offsetTop - offset;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+// Initialize search and filter functionality
+function initializeSearchAndFilter() {
+    const searchInput = document.getElementById('plant-search');
+    const frostFilter = document.getElementById('frost-filter');
+    
+    if (searchInput) {
+        searchInput.addEventListener('input', applyFilters);
+    }
+    
+    if (frostFilter) {
+        frostFilter.addEventListener('change', applyFilters);
+    }
+}
+
+// Apply search and filter to plants
+function applyFilters() {
+    const searchTerm = document.getElementById('plant-search')?.value.toLowerCase() || '';
+    const frostFilterValue = document.getElementById('frost-filter')?.value || '';
+    
+    const plantCards = document.querySelectorAll('.plant-card');
+    let visibleCount = 0;
+    
+    plantCards.forEach(card => {
+        const plantName = card.querySelector('h3')?.textContent.toLowerCase() || '';
+        const scientificName = card.querySelector('.scientific-name')?.textContent.toLowerCase() || '';
+        const frostInfo = card.querySelector('.plant-card-info')?.textContent.toLowerCase() || '';
+        
+        const matchesSearch = plantName.includes(searchTerm) || scientificName.includes(searchTerm);
+        const matchesFrost = !frostFilterValue || frostInfo.includes(getFrostToleranceText(frostFilterValue).toLowerCase());
+        
+        if (matchesSearch && matchesFrost) {
+            card.classList.remove('hidden');
+            visibleCount++;
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+    
+    // Add feedback for no results
+    let noResultsMsg = document.getElementById('no-results-message');
+    
+    if (visibleCount === 0) {
+        if (!noResultsMsg) {
+            noResultsMsg = document.createElement('p');
+            noResultsMsg.id = 'no-results-message';
+            noResultsMsg.className = 'no-results-message';
+            noResultsMsg.textContent = '🔍 Ingen planter funnet. Prøv et annet søk eller filter.';
+            
+            const plantsGrid = document.getElementById('plants-grid');
+            plantsGrid.parentNode.insertBefore(noResultsMsg, plantsGrid.nextSibling);
+        }
+        noResultsMsg.style.display = 'block';
+    } else if (noResultsMsg) {
+        noResultsMsg.style.display = 'none';
     }
 }
