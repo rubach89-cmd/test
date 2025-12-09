@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyrkingsplanlegger - Norsk Hage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 Dyrkingsplanlegger</h1>
+        <p>Planlegg din hage basert på norsk klima og siste frostdato</p>
+    </header>
+
+    <main>
+        <!-- Calculator Section -->
+        <section id="calculator-section" class="card">
+            <h2>📊 Avlingskalkulator</h2>
+            <p>Beregn hvor mye areal og frø/sett du trenger</p>
+            
+            <div class="calculator-form">
+                <div class="form-group">
+                    <label for="calc-plant">Velg plante:</label>
+                    <select id="calc-plant">
+                        <option value="">-- Velg plante --</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="calc-desired-kg">Ønsket avling (kg):</label>
+                    <input type="number" id="calc-desired-kg" min="1" value="100" step="0.1">
+                </div>
+                
+                <button id="calc-button" class="btn btn-primary">Beregn</button>
+            </div>
+            
+            <div id="calc-result" class="calc-result" style="display: none;">
+                <h3>Resultat:</h3>
+                <p id="calc-result-text"></p>
+                <button id="calc-add-to-list" class="btn btn-secondary">Legg til i handleliste</button>
+            </div>
+        </section>
+
+        <!-- Plant Cards Section -->
+        <section id="plants-section">
+            <h2>🌿 Plantekatalog</h2>
+            <div id="plant-filter">
+                <input type="text" id="search-plants" placeholder="Søk etter planter...">
+            </div>
+            <div id="plants-container" class="plants-grid">
+                <!-- Plant cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Handleliste Section -->
+        <section id="handleliste-section" class="card">
+            <div class="handleliste-header">
+                <h2>🛒 Handleliste</h2>
+                <div class="handleliste-actions">
+                    <button id="export-csv" class="btn btn-export">Eksporter CSV</button>
+                    <button id="export-pdf" class="btn btn-export">Eksporter PDF</button>
+                    <button id="clear-list" class="btn btn-danger">Tøm liste</button>
+                </div>
+            </div>
+            <div id="handleliste-table-container">
+                <table id="handleliste-table">
+                    <thead>
+                        <tr>
+                            <th>Plante</th>
+                            <th>Ønsket kg</th>
+                            <th>m²</th>
+                            <th>Frø/sett</th>
+                            <th>Frø enhet</th>
+                            <th>Notat</th>
+                            <th>Fjern</th>
+                        </tr>
+                    </thead>
+                    <tbody id="handleliste-body">
+                        <!-- Items will be dynamically inserted here -->
+                    </tbody>
+                </table>
+                <div id="handleliste-empty" class="empty-message">
+                    <p>Handlelisten er tom. Legg til planter fra plantekatalogen eller kalkulatoren.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Plant Modal -->
+    <div id="plant-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
