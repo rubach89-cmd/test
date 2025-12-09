@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeEventListeners();
     renderPlants();
     renderHandleliste();
-    updateHeaderStats();
     initializeScrollBehavior();
     initializeSearchAndFilter();
 });
@@ -28,6 +27,7 @@ async function loadData() {
         climateZonesData = await climateResponse.json();
         
         populatePlantSelect();
+        updateHeaderStats();
     } catch (error) {
         console.error('Error loading data:', error);
         alert('Kunne ikke laste plantdata. Vennligst sjekk at datafilene finnes.');
@@ -629,12 +629,7 @@ function applyFilters() {
         if (!noResultsMsg) {
             noResultsMsg = document.createElement('p');
             noResultsMsg.id = 'no-results-message';
-            noResultsMsg.style.textAlign = 'center';
-            noResultsMsg.style.padding = '40px';
-            noResultsMsg.style.color = '#666';
-            noResultsMsg.style.background = 'white';
-            noResultsMsg.style.borderRadius = '12px';
-            noResultsMsg.style.fontSize = '1.1rem';
+            noResultsMsg.className = 'no-results-message';
             noResultsMsg.textContent = '🔍 Ingen planter funnet. Prøv et annet søk eller filter.';
             
             const plantsGrid = document.getElementById('plants-grid');

@@ -14,7 +14,6 @@ body {
     line-height: 1.6;
     color: #333;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-attachment: fixed;
     min-height: 100vh;
     padding: 20px;
 }
@@ -900,4 +899,15 @@ main {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+/* No Results Message */
+.no-results-message {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    background: white;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    margin-top: 20px;
 }
