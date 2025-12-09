@@ -71,6 +71,119 @@
             </div>
         </section>
 
+        <!-- Diary Section -->
+        <section id="diary-section" class="card">
+            <div class="section-header">
+                <h2>📖 Hagedagbok</h2>
+                <div class="header-buttons">
+                    <button id="new-diary-entry-btn" class="btn-primary btn-small">Ny oppføring</button>
+                    <button id="export-diary-csv-btn" class="btn-secondary btn-small">Eksporter CSV</button>
+                    <button id="export-diary-pdf-btn" class="btn-secondary btn-small">Eksporter PDF</button>
+                    <button id="show-summary-btn" class="btn-secondary btn-small">Vis sammendrag</button>
+                </div>
+            </div>
+
+            <!-- Diary Entry Form -->
+            <div id="diary-entry-form" style="display: none;">
+                <h3>Ny dagbokoppføring</h3>
+                <form id="diary-form">
+                    <div class="form-group">
+                        <label for="diary-date">Dato:</label>
+                        <input type="date" id="diary-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="diary-activity">Aktivitet:</label>
+                        <select id="diary-activity" required>
+                            <option value="">-- Velg aktivitet --</option>
+                            <option value="såing">Såing</option>
+                            <option value="planting">Planting</option>
+                            <option value="vanning">Vanning</option>
+                            <option value="gjødsling">Gjødsling</option>
+                            <option value="luking">Luking</option>
+                            <option value="beskjæring">Beskjæring</option>
+                            <option value="høsting">Høsting</option>
+                            <option value="observasjon">Observasjon</option>
+                            <option value="annet">Annet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="diary-plants">Planter (valgfritt):</label>
+                        <select id="diary-plants" multiple size="5">
+                            <!-- Options populated from crops data -->
+                        </select>
+                        <small>Hold Ctrl/Cmd for å velge flere</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="diary-notes">Notater:</label>
+                        <textarea id="diary-notes" rows="5" placeholder="Beskriv hva du gjorde, hva du observerte, værforhold, etc." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="diary-weather">Vær:</label>
+                        <input type="text" id="diary-weather" placeholder="F.eks: Solfylt, 18°C">
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-primary">Lagre oppføring</button>
+                        <button type="button" id="cancel-diary-btn" class="btn-secondary">Avbryt</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Diary Filters -->
+            <div id="diary-filters" class="diary-filters">
+                <div class="filter-group">
+                    <label for="filter-year">År:</label>
+                    <select id="filter-year">
+                        <option value="">Alle år</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-month">Måned:</label>
+                    <select id="filter-month">
+                        <option value="">Alle måneder</option>
+                        <option value="1">Januar</option>
+                        <option value="2">Februar</option>
+                        <option value="3">Mars</option>
+                        <option value="4">April</option>
+                        <option value="5">Mai</option>
+                        <option value="6">Juni</option>
+                        <option value="7">Juli</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">Oktober</option>
+                        <option value="11">November</option>
+                        <option value="12">Desember</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-activity">Aktivitet:</label>
+                    <select id="filter-activity">
+                        <option value="">Alle aktiviteter</option>
+                        <option value="såing">Såing</option>
+                        <option value="planting">Planting</option>
+                        <option value="vanning">Vanning</option>
+                        <option value="gjødsling">Gjødsling</option>
+                        <option value="luking">Luking</option>
+                        <option value="beskjæring">Beskjæring</option>
+                        <option value="høsting">Høsting</option>
+                        <option value="observasjon">Observasjon</option>
+                        <option value="annet">Annet</option>
+                    </select>
+                </div>
+                <button id="apply-filters-btn" class="btn-primary btn-small">Filtrer</button>
+                <button id="clear-filters-btn" class="btn-secondary btn-small">Nullstill</button>
+            </div>
+
+            <!-- Diary Entries List -->
+            <div id="diary-entries-container">
+                <div id="diary-entries-list">
+                    <!-- Diary entries will be added dynamically -->
+                </div>
+                <p id="empty-diary-message" style="display: none; text-align: center; padding: 20px; color: #666;">
+                    Ingen dagbokoppføringer ennå. Klikk "Ny oppføring" for å legge til din første oppføring.
+                </p>
+            </div>
+        </section>
+
         <!-- Plants Grid Section -->
         <section id="plants-section">
             <h2>Planter</h2>
