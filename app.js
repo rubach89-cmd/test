@@ -576,6 +576,14 @@ function populateDiaryPlantsSelect() {
 // Populate year filter with available years from entries
 function populateYearFilter() {
     const yearSelect = document.getElementById('filter-year');
+    yearSelect.innerHTML = ''; // Clear existing options
+    
+    // Add "All years" option
+    const allOption = document.createElement('option');
+    allOption.value = '';
+    allOption.textContent = 'Alle år';
+    yearSelect.appendChild(allOption);
+    
     const years = new Set();
     
     diaryEntries.forEach(entry => {
@@ -848,8 +856,10 @@ function showDiarySummary() {
         monthCounts[month]++;
     });
     
-    const mostCommonActivity = Object.entries(activityCounts)
-        .sort((a, b) => b[1] - a[1])[0];
+    const activityEntries = Object.entries(activityCounts);
+    const mostCommonActivity = activityEntries.length > 0 
+        ? activityEntries.sort((a, b) => b[1] - a[1])[0]
+        : null;
     
     const topPlants = Object.entries(plantCounts)
         .sort((a, b) => b[1] - a[1])
@@ -870,10 +880,12 @@ function showDiarySummary() {
                     <div class="summary-stat-value">${yearEntries.length}</div>
                     <div class="summary-stat-label">Totale oppføringer</div>
                 </div>
-                <div class="summary-stat">
-                    <div class="summary-stat-value">${getActivityText(mostCommonActivity[0])}</div>
-                    <div class="summary-stat-label">Vanligste aktivitet (${mostCommonActivity[1]}x)</div>
-                </div>
+                ${mostCommonActivity ? `
+                    <div class="summary-stat">
+                        <div class="summary-stat-value">${getActivityText(mostCommonActivity[0])}</div>
+                        <div class="summary-stat-label">Vanligste aktivitet (${mostCommonActivity[1]}x)</div>
+                    </div>
+                ` : ''}
                 <div class="summary-stat">
                     <div class="summary-stat-value">${monthNames[mostActiveMonth]}</div>
                     <div class="summary-stat-label">Mest aktive måned</div>
