@@ -8,9 +8,30 @@
 </head>
 <body>
     <header>
-        <h1>🌱 Plantekalkulator</h1>
-        <p>Beregn hvor mye frø og plass du trenger for hagen din</p>
+        <div class="header-content">
+            <h1>🌱 Plantekalkulator</h1>
+            <p>Beregn hvor mye frø og plass du trenger for hagen din</p>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="total-plants">50</span>
+                    <span class="stat-label">Planter</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="list-items">0</span>
+                    <span class="stat-label">I handleliste</span>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <a href="#calculator-section" class="nav-link">Kalkulator</a>
+        <a href="#handleliste-section" class="nav-link">Handleliste</a>
+        <a href="#plants-section" class="nav-link">Planter</a>
+        <a href="#tips-section" class="nav-link">Hageråd</a>
+        <a href="#seasonal-section" class="nav-link">Sesongguide</a>
+    </nav>
 
     <main>
         <!-- Global Calculator Section -->
@@ -73,12 +94,146 @@
 
         <!-- Plants Grid Section -->
         <section id="plants-section">
-            <h2>Planter</h2>
+            <div class="section-title-container">
+                <h2>Plantedatabase</h2>
+                <div class="search-filter-container">
+                    <input type="text" id="plant-search" placeholder="🔍 Søk etter planter..." class="search-input">
+                    <select id="frost-filter" class="filter-select">
+                        <option value="">Alle frosttålighet</option>
+                        <option value="none">Ingen</option>
+                        <option value="light">Lett</option>
+                        <option value="moderate">Moderat</option>
+                        <option value="high">Høy</option>
+                    </select>
+                </div>
+            </div>
             <div id="plants-grid" class="plants-grid">
                 <!-- Plant cards will be added dynamically -->
             </div>
         </section>
+
+        <!-- Educational Tips Section -->
+        <section id="tips-section" class="card">
+            <h2>🌿 Hageråd og Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">💧</div>
+                    <h3>Vanning</h3>
+                    <p>De fleste grønnsaker trenger 2-3 cm vann per uke. Vann på morgenen for å redusere fordampning.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">☀️</div>
+                    <h3>Solforhold</h3>
+                    <p>Fruktbærende planter (tomat, paprika) trenger minst 6-8 timer direkte sollys daglig.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🌱</div>
+                    <h3>Jordkvalitet</h3>
+                    <p>God kompost eller husdyrgjødsel forbedrer jordens struktur og næringsnivå betydelig.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🔄</div>
+                    <h3>Vekstsykler</h3>
+                    <p>Praktiser vekstskifte for å forhindre sykdommer og opprettholde jordhelsen.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🐛</div>
+                    <h3>Skadedyrkontroll</h3>
+                    <p>Samdyrking med blomster og urter kan tiltrekke nyttige insekter og avverge skadedyr.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">📏</div>
+                    <h3>Planteavstand</h3>
+                    <p>Riktig avstand mellom plantene sikrer god luftsirkulasjon og reduserer sykdomsrisiko.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seasonal Guide Section -->
+        <section id="seasonal-section" class="card">
+            <h2>📅 Sesongguide</h2>
+            <p class="section-intro">Når skal du så? Her er en rask guide for norske forhold.</p>
+            <div class="seasonal-timeline">
+                <div class="season-card spring">
+                    <div class="season-header">
+                        <span class="season-icon">🌸</span>
+                        <h3>Vår (Mars-Mai)</h3>
+                    </div>
+                    <ul class="season-list">
+                        <li><strong>Mars:</strong> Start frø innendørs (tomat, paprika, aubergine)</li>
+                        <li><strong>April:</strong> Herdefaste grønnsaker utendørs (erter, spinat, gulrot)</li>
+                        <li><strong>Mai:</strong> Etter siste frost - varmeelskende planter</li>
+                    </ul>
+                </div>
+                <div class="season-card summer">
+                    <div class="season-header">
+                        <span class="season-icon">☀️</span>
+                        <h3>Sommer (Juni-August)</h3>
+                    </div>
+                    <ul class="season-list">
+                        <li><strong>Juni:</strong> Plante ut alle sommervekster</li>
+                        <li><strong>Juli:</strong> Fortsett direktesåing av salat og rotgrønnsaker</li>
+                        <li><strong>August:</strong> Så høstvekster (salat, reddik, spinat)</li>
+                    </ul>
+                </div>
+                <div class="season-card autumn">
+                    <div class="season-header">
+                        <span class="season-icon">🍂</span>
+                        <h3>Høst (September-November)</h3>
+                    </div>
+                    <ul class="season-list">
+                        <li><strong>September:</strong> Høst av hovedkulturer, plante løk og hvitløk</li>
+                        <li><strong>Oktober:</strong> Siste innhøsting, forberede vinterlagring</li>
+                        <li><strong>November:</strong> Rydde bed, legge kompost, planlegge neste sesong</li>
+                    </ul>
+                </div>
+                <div class="season-card winter">
+                    <div class="season-header">
+                        <span class="season-icon">❄️</span>
+                        <h3>Vinter (Desember-Februar)</h3>
+                    </div>
+                    <ul class="season-list">
+                        <li><strong>Desember:</strong> Planlegging og bestilling av frø</li>
+                        <li><strong>Januar:</strong> Vedlikeholde verktøy, lese hagbøker</li>
+                        <li><strong>Februar:</strong> Start tidlige frø innendørs (chili, paprika)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq-section" class="card">
+            <h2>❓ Vanlige Spørsmål</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>Hvordan bruker jeg kalkulatoren?</summary>
+                    <p>Velg en plante fra listen, skriv inn hvor mange kg du ønsker, og trykk "Beregn". Du får da vite hvor mye areal og frø du trenger. Du kan deretter legge dette til i handlelisten din.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Hvor mye plass trenger jeg egentlig?</summary>
+                    <p>Det avhenger av hva du vil dyrke. En familie på 4 personer trenger typisk 30-50 m² for grunnleggende grønnsaker. Bruk kalkulatoren for å få nøyaktige tall basert på dine behov.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Når skal jeg så frøene mine?</summary>
+                    <p>Se sesongguiden ovenfor for generell veiledning. Hver plante har ulike krav - noen må starte innendørs 6-8 uker før siste frost, andre kan såes direkte utendørs.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Hva betyr frosttålighet?</summary>
+                    <p><strong>Ingen:</strong> Tåler ingen frost, må plantes etter siste frost.<br>
+                    <strong>Lett:</strong> Tåler lette frostgrader (-2°C til 0°C).<br>
+                    <strong>Moderat:</strong> Tåler moderat frost (-5°C til -2°C).<br>
+                    <strong>Høy:</strong> Tåler kraftig frost (under -5°C).</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Hvordan lagres handlelisten min?</summary>
+                    <p>Handlelisten lagres automatisk i nettleserens localStorage. Den vil være der neste gang du besøker siden, men vil forsvinne hvis du tømmer nettleserens data.</p>
+                </details>
+            </div>
+        </section>
     </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn" class="scroll-top-btn" title="Gå til toppen">↑</button>
 
     <!-- Plant Modal -->
     <div id="plant-modal" class="modal">
