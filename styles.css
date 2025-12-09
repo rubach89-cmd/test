@@ -391,6 +391,249 @@ main {
     margin: 8px 0;
 }
 
+/* Diary Section Styles */
+#diary-entry-form {
+    background: #f8f9ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#diary-entry-form h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-group small {
+    display: block;
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    flex: 1;
+}
+
+.diary-filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9ff;
+    border-radius: 8px;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.diary-entry {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.diary-entry:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.diary-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.diary-entry-title {
+    flex: 1;
+}
+
+.diary-entry-date {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.diary-entry-activity {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.diary-entry-weather {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.diary-entry-content {
+    margin-bottom: 15px;
+}
+
+.diary-entry-notes {
+    color: #333;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.diary-entry-plants {
+    margin-top: 15px;
+}
+
+.diary-entry-plants-label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.diary-plant-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.diary-plant-tag {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+}
+
+.diary-entry-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.diary-summary {
+    background: #f8f9ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.diary-summary h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.summary-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.summary-stat {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.summary-stat-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.summary-activities {
+    margin-top: 20px;
+}
+
+.summary-activities h4 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.activity-list li:last-child {
+    border-bottom: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
@@ -433,6 +676,22 @@ main {
     .plant-card-footer {
         flex-direction: column;
     }
+
+    .diary-filters {
+        flex-direction: column;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .diary-entry-header {
+        flex-direction: column;
+    }
+
+    .summary-stats {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -447,5 +706,9 @@ main {
     #handleliste-table {
         display: block;
         overflow-x: auto;
+    }
+
+    .form-buttons {
+        flex-direction: column;
     }
 }

@@ -7,7 +7,8 @@ En norsk webapplikasjon for å beregne frø- og arealsbehov for hagebruk, med in
 - **Plantedatabase**: 50 norske planter med detaljert informasjon om avling, frøbehov og frosttålighet
 - **Kalkulator**: Beregn nødvendig areal og frøbehov basert på ønsket avling
 - **Handleliste**: Persistent handleliste (localStorage) for planlegging av hagesesongen
-- **Eksport**: Eksporter handleliste til CSV eller PDF (klientsiden)
+- **Hagedagbok**: Loggfør og spor hageaktiviteter gjennom året med filtrering og sammendrag
+- **Eksport**: Eksporter handleliste og dagbok til CSV eller PDF (klientsiden)
 - **SVG-ikoner**: Forbedrede SVG-ikoner for alle planter med automatisk fallback
 - **Responsive design**: Fungerer på mobil, nettbrett og desktop
 
@@ -68,13 +69,41 @@ Det finnes tre måter å legge til planter:
    - Komplett tabell med alle planter
    - Dato for generering
 
+### Bruke hagedagboken
+
+#### Legge til oppføringer
+1. Klikk "Ny oppføring" i hagedagbok-seksjonen
+2. Velg dato for aktiviteten
+3. Velg type aktivitet (såing, planting, vanning, etc.)
+4. Velg relevante planter (valgfritt, hold Ctrl/Cmd for flere)
+5. Skriv notater om hva du gjorde
+6. Legg til værforhold hvis ønskelig
+7. Klikk "Lagre oppføring"
+
+#### Filtrere oppføringer
+- **Filtrer etter år**: Se kun oppføringer fra et bestemt år
+- **Filtrer etter måned**: Se oppføringer fra en bestemt måned
+- **Filtrer etter aktivitet**: Se kun spesifikke aktivitetstyper
+- Klikk "Filtrer" for å anvende valgte filtre
+- Klikk "Nullstill" for å fjerne alle filtre
+
+#### Vis sammendrag
+Klikk "Vis sammendrag" for å se:
+- Totalt antall oppføringer for valgt år
+- Vanligste aktivitet
+- Mest aktive måned
+- Mest nevnte planter
+- Fordeling av aktiviteter
+
+Dette er spesielt nyttig for å evaluere hagearbeidet etter et års sesong.
+
 ### Persistence
-Handlelisten lagres automatisk i nettleserens localStorage. Listen vil forbli ved:
+Både handlelisten og dagboken lagres automatisk i nettleserens localStorage. Data vil forbli ved:
 - Sideoppdatering
 - Lukking og gjenåpning av nettleseren
 - Navigering til andre sider og tilbake
 
-For å tømme alt lagret data, klikk "Tøm liste" eller bruk nettleserens utviklerverktøy.
+For å tømme handlelisten, klikk "Tøm liste". For å slette dagbokoppføringer, klikk "Slett" på den enkelte oppføring.
 
 ## Teknisk informasjon
 
@@ -147,10 +176,10 @@ For å tømme alt lagret data, klikk "Tøm liste" eller bruk nettleserens utvikl
 - Sørg for at du kjører applikasjonen via HTTP(S), ikke `file://`
 - Sjekk nettverksøy i nettleseren for å bekrefte at html2pdf.js lastes
 
-### Handlelisten forsvinner
+### Handlelisten eller dagboken forsvinner
 - Sjekk at localStorage er aktivert i nettleseren
 - Private/inkognito-modus kan blokkere localStorage
-- Nettleserens historikk/data-sletting vil fjerne listen
+- Nettleserens historikk/data-sletting vil fjerne alle lagrede data
 
 ### Ikoner vises ikke
 - Verifiser at `assets/icons/` mappen eksisterer
@@ -172,3 +201,6 @@ Bidrag er velkomne! Åpne en issue eller send en pull request.
 - Legge til sorteringsmuligheter i handleliste
 - Eksport til andre formater (JSON, etc.)
 - Integrasjon med online plantebutikker
+- Bildeopplasting i dagbokoppføringer
+- Statistikkgrafer for dagboken
+- Påminnelser for hageaktiviteter
