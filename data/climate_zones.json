@@ -1,0 +1,30 @@
+[
+  {
+    "zone": 1,
+    "name": "Kyst og fjord",
+    "description": "Mildt kystklima med lange vekstsesonger",
+    "typical_last_frost": "2025-04-15",
+    "typical_first_frost": "2025-10-15"
+  },
+  {
+    "zone": 2,
+    "name": "Lavland",
+    "description": "Moderat klima med middels vekstsesong",
+    "typical_last_frost": "2025-05-15",
+    "typical_first_frost": "2025-09-15"
+  },
+  {
+    "zone": 3,
+    "name": "Innland",
+    "description": "Kjøligere innlandsklima med kortere vekstsesong",
+    "typical_last_frost": "2025-06-01",
+    "typical_first_frost": "2025-09-01"
+  },
+  {
+    "zone": 4,
+    "name": "Fjell og nord",
+    "description": "Kaldt klima med kort vekstsesong",
+    "typical_last_frost": "2025-06-15",
+    "typical_first_frost": "2025-08-15"
+  }
+]
