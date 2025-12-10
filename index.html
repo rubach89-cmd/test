@@ -1,97 +1,58 @@
-<!DOCTYPE html>
-<html lang="nb">
+<!doctype html>
+<html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantekalkulator med Handleliste</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prosjektarkiv / Dokumentasjon</title>
+  <meta name="description" content="Dokumentasjon, notater og kodeeksempler. Dette er en informasjons-side, ikke en salgsside." />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>🌱 Plantekalkulator</h1>
-        <p>Beregn hvor mye frø og plass du trenger for hagen din</p>
-    </header>
+  <a class="skip-link" href="#main">Hopp til innhold</a>
+  <header role="banner">
+    <nav aria-label="Hovednavigasjon">
+      <ul class="nav-list">
+        <li><a href="#om">Om</a></li>
+        <li><a href="#prosjekter">Prosjekter</a></li>
+        <li><a href="#dokumentasjon">Dokumentasjon</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <!-- Global Calculator Section -->
-        <section id="calculator-section" class="card">
-            <h2>Kalkulator</h2>
-            <p>Velg en plante og skriv inn ønsket avling for å beregne plass og frøbehov.</p>
-            
-            <div class="calculator-form">
-                <label for="plant-select">Velg plante:</label>
-                <select id="plant-select">
-                    <option value="">-- Velg plante --</option>
-                </select>
-                
-                <label for="desired-kg">Ønsket avling (kg):</label>
-                <input type="number" id="desired-kg" min="0" step="0.1" placeholder="f.eks. 100">
-                
-                <button id="calculate-btn" class="btn-primary">Beregn</button>
-            </div>
-            
-            <div id="calculator-result" style="display: none;">
-                <h3>Resultat:</h3>
-                <div id="result-details"></div>
-                <button id="add-calc-to-list" class="btn-secondary btn-small">Legg til i handleliste</button>
-            </div>
-        </section>
+  <main id="main" role="main">
+    <section id="hero" class="hero">
+      <h1>Prosjektarkiv og dokumentasjon</h1>
+      <p>Her finner du tekniske notater, guider og eksempelprosjekter. Siden er ment som referanse og læringsressurs — ikke markedsføring.</p>
+    </section>
 
-        <!-- Handleliste Section -->
-        <section id="handleliste-section" class="card">
-            <div class="section-header">
-                <h2>📋 Handleliste</h2>
-                <div class="header-buttons">
-                    <button id="export-csv-btn" class="btn-secondary btn-small">Eksporter CSV</button>
-                    <button id="export-pdf-btn" class="btn-secondary btn-small">Eksporter PDF</button>
-                    <button id="clear-list-btn" class="btn-danger btn-small">Tøm liste</button>
-                </div>
-            </div>
-            
-            <div id="handleliste-container">
-                <table id="handleliste-table">
-                    <thead>
-                        <tr>
-                            <th>Plante</th>
-                            <th>Ønsket kg</th>
-                            <th>m²</th>
-                            <th>Frø/sett</th>
-                            <th>Frø_enhet</th>
-                            <th>Notat</th>
-                            <th>Fjern</th>
-                        </tr>
-                    </thead>
-                    <tbody id="handleliste-body">
-                        <!-- Items will be added dynamically -->
-                    </tbody>
-                </table>
-                <p id="empty-list-message" style="display: none; text-align: center; padding: 20px; color: #666;">
-                    Listen er tom. Legg til planter fra kortene nedenfor eller bruk kalkulatoren.
-                </p>
-            </div>
-        </section>
+    <section id="om">
+      <h2>Om</h2>
+      <p>Kort om hva denne siden inneholder og hvem som vedlikeholder den.</p>
+    </section>
 
-        <!-- Plants Grid Section -->
-        <section id="plants-section">
-            <h2>Planter</h2>
-            <div id="plants-grid" class="plants-grid">
-                <!-- Plant cards will be added dynamically -->
-            </div>
-        </section>
-    </main>
+    <section id="prosjekter">
+      <h2>Prosjekter</h2>
+      <ul>
+        <li>Prosjekt A — kort beskrivelse, lenke til repo eller demo.</li>
+        <li>Prosjekt B — kort beskrivelse.</li>
+      </ul>
+    </section>
 
-    <!-- Plant Modal -->
-    <div id="plant-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modal-body">
-                <!-- Modal content will be added dynamically -->
-            </div>
-        </div>
-    </div>
+    <section id="dokumentasjon">
+      <h2>Dokumentasjon</h2>
+      <p>Lenker til IMPLEMENTERINGSGUIDE, KOMME-I-GANG og andre tekniske ressurser.</p>
+    </section>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Kontakt: <a href="mailto:din-epost@example.com">din-epost@example.com</a> — foretrekker kun faglig / teknisk kontakt.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lisens: <a href="https://opensource.org/licenses/MIT">MIT</a> (legg inn riktig lisens om ønskelig)</p>
+  </footer>
+  <script src="app.js" defer></script>
 </body>
 </html>
