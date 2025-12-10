@@ -165,10 +165,16 @@ Dette prosjektet er laget som en demonstrasjon og kan fritt brukes og modifisere
 
 Bidrag er velkomne! Åpne en issue eller send en pull request.
 
-### Forbedringer som kan gjøres:
-- Legg til flere planter
-- Forbedre ikoner
-- Oversette til andre språk
-- Legge til sorteringsmuligheter i handleliste
-- Eksport til andre formater (JSON, etc.)
-- Integrasjon med online plantebutikker
+### Videre utvikling
+
+Se [ANBEFALINGER.md](ANBEFALINGER.md) for detaljert oversikt over prioriterte forbedringer og implementeringsguider.
+
+**Rask oversikt over foreslåtte forbedringer:**
+- 🔍 Søk og filtreringsfunksjonalitet (Høy prioritet)
+- 📊 Sortering av handleliste (Høy prioritet)
+- ✏️ Redigering av handleliste-elementer (Høy prioritet)
+- 📱 Forbedret mobilvisning (Høy prioritet)
+- 📅 Plantesesongkalender (Middels prioritet)
+- ⭐ Favoritter/merking av planter (Middels prioritet)
+- 🌦️ Værogsoneintegrasjon (Lav prioritet)
+- 🏪 Integrasjon med online plantebutikker (Lav prioritet)
