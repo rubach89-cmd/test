@@ -165,16 +165,23 @@ Dette prosjektet er laget som en demonstrasjon og kan fritt brukes og modifisere
 
 Bidrag er velkomne! Åpne en issue eller send en pull request.
 
-### Videre utvikling
+### 🚀 Videre utvikling
 
-Se [ANBEFALINGER.md](ANBEFALINGER.md) for detaljert oversikt over prioriterte forbedringer og implementeringsguider.
+**Vil du forbedre appen?** Se [KOMME-I-GANG.md](KOMME-I-GANG.md) for en rask oppstartsguide!
 
-**Rask oversikt over foreslåtte forbedringer:**
-- 🔍 Søk og filtreringsfunksjonalitet (Høy prioritet)
-- 📊 Sortering av handleliste (Høy prioritet)
-- ✏️ Redigering av handleliste-elementer (Høy prioritet)
-- 📱 Forbedret mobilvisning (Høy prioritet)
-- 📅 Plantesesongkalender (Middels prioritet)
-- ⭐ Favoritter/merking av planter (Middels prioritet)
-- 🌦️ Værogsoneintegrasjon (Lav prioritet)
-- 🏪 Integrasjon med online plantebutikker (Lav prioritet)
+**Detaljerte ressurser:**
+- 📖 [ANBEFALINGER.md](ANBEFALINGER.md) - Komplett oversikt over forbedringer
+- 🛠️ [IMPLEMENTERINGSGUIDE.md](IMPLEMENTERINGSGUIDE.md) - Steg-for-steg implementering
+- ⚡ [KOMME-I-GANG.md](KOMME-I-GANG.md) - Rask start med topp 3 forbedringer
+
+**Anbefalt prioritering:**
+1. 🔍 Søk og filtreringsfunksjonalitet (2-3 timer)
+2. 📊 Sortering av handleliste (2-3 timer)
+3. ✏️ Redigering av handleliste-elementer (1-2 timer)
+
+**Andre foreslåtte forbedringer:**
+- 📱 Forbedret mobilvisning
+- 📅 Plantesesongkalender
+- ⭐ Favoritter/merking av planter
+- 🌦️ Værogsoneintegrasjon
+- 🏪 Integrasjon med online plantebutikker
